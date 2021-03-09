@@ -1,0 +1,25 @@
+uuid: 2d363387-dd50-4d1e-a243-31b9b32cb6de
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:carousel:5257c204-9cac-4277-8311-009347afdb40'
+  module:
+    - block_content
+  theme:
+    - mytheme
+id: carouselblock
+theme: mytheme
+region: content
+weight: 8
+provider: null
+plugin: 'block_content:5257c204-9cac-4277-8311-009347afdb40'
+settings:
+  id: 'block_content:5257c204-9cac-4277-8311-009347afdb40'
+  label: 'Carousel block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

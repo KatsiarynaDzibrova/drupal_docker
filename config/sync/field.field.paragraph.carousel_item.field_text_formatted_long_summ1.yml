@@ -1,0 +1,23 @@
+uuid: 2ae67666-4461-4efc-8cee-5f74dea68d6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_formatted_long_summ1
+    - paragraphs.paragraphs_type.carousel_item
+  module:
+    - text
+id: paragraph.carousel_item.field_text_formatted_long_summ1
+field_name: field_text_formatted_long_summ1
+entity_type: paragraph
+bundle: carousel_item
+label: Footnote
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

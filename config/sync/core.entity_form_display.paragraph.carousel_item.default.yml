@@ -1,0 +1,58 @@
+uuid: 0dc8d2c0-fb51-47f8-948b-36bceaeee7a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel_item.field_image
+    - field.field.paragraph.carousel_item.field_text_formatted_long_summ
+    - field.field.paragraph.carousel_item.field_text_formatted_long_summ1
+    - field.field.paragraph.carousel_item.field_text_plain
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.carousel_item
+  module:
+    - image
+    - text
+id: paragraph.carousel_item.default
+targetEntityType: paragraph
+bundle: carousel_item
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text_formatted_long_summ:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_text_formatted_long_summ1:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_text_plain:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
