@@ -1,0 +1,83 @@
+uuid: dc6aa01c-6b68-414e-aa6b-4b7753cda40a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.netflix_title.field_image
+    - field.field.node.netflix_title.field_number_int
+    - field.field.node.netflix_title.field_text_plain
+    - field.field.node.netflix_title.field_text_plain_1
+    - field.field.node.netflix_title.field_text_plain_2
+    - field.field.node.netflix_title.field_text_plain_long
+    - field.field.node.netflix_title.field_text_plain_long_1
+    - node.type.netflix_title
+  module:
+    - image
+    - user
+id: node.netflix_title.default
+targetEntityType: node
+bundle: netflix_title
+mode: default
+content:
+  field_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_number_int:
+    weight: 107
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_text_plain:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text_plain_1:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text_plain_2:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text_plain_long:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_text_plain_long_1:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: e5632096-ede8-415a-84de-17b8f6bfcb98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_plain
+    - node.type.netflix_title
+id: node.netflix_title.field_text_plain
+field_name: field_text_plain
+entity_type: node
+bundle: netflix_title
+label: Director
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
