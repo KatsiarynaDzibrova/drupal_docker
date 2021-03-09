@@ -1,0 +1,7 @@
+hello.content:
+  path: '/netflix'
+  defaults:
+    _controller: '\Drupal\netflix_show\Controller\NetflixShowController::content'
+    _title: 'Netflix Show'
+  requirements:
+    _permission: 'access content'
