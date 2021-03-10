@@ -1,16 +1,25 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '9.x-dev',
-    'version' => '9.9999999.9999999.9999999-dev',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => 'eacd0558d93e2b4bcac7eb6e67b0cebdf97a125f',
+    'reference' => '81f60d78699d3431a5e396a972bb6b4111846146',
     'name' => 'drupal-composer/drupal-project',
   ),
   'versions' => 
   array (
+    'alchemy/zippy' => 
+    array (
+      'pretty_version' => '0.4.9',
+      'version' => '0.4.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '59fbeefb9a249122867ef25e53addfcce31850d7',
+    ),
     'asm89/stack-cors' => 
     array (
       'pretty_version' => '1.3.0',
@@ -225,6 +234,15 @@
       ),
       'reference' => 'ae02121445ad75f4eaff800cc532b5e6233e2ddf',
     ),
+    'dflydev/dot-access-configuration' => 
+    array (
+      'pretty_version' => 'v1.0.3',
+      'version' => '1.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2e6eb0c8b8830b26bb23defcfc38d4276508fc49',
+    ),
     'dflydev/dot-access-data' => 
     array (
       'pretty_version' => 'v1.1.0',
@@ -233,6 +251,15 @@
       array (
       ),
       'reference' => '3fbd874921ab2c041e899d044585a2ab9795df8a',
+    ),
+    'dflydev/placeholder-resolver' => 
+    array (
+      'pretty_version' => 'v1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c498d0cae91b1bb36cc7d60906dab8e62bb7c356',
     ),
     'dnoegel/php-xdg-base-dir' => 
     array (
@@ -335,12 +362,12 @@
     ),
     'drupal-composer/drupal-project' => 
     array (
-      'pretty_version' => '9.x-dev',
-      'version' => '9.9999999.9999999.9999999-dev',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => 'eacd0558d93e2b4bcac7eb6e67b0cebdf97a125f',
+      'reference' => '81f60d78699d3431a5e396a972bb6b4111846146',
     ),
     'drupal/action' => 
     array (
@@ -476,6 +503,42 @@
       array (
         0 => '9.1.4',
       ),
+    ),
+    'drupal/console' => 
+    array (
+      'pretty_version' => '1.9.7',
+      'version' => '1.9.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '90053d30f52427edb4e4941a9063acb65b5a2c1e',
+    ),
+    'drupal/console-core' => 
+    array (
+      'pretty_version' => '1.9.7',
+      'version' => '1.9.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ab3abc2631761c9588230ba88189d9ba4eb9ed63',
+    ),
+    'drupal/console-en' => 
+    array (
+      'pretty_version' => 'v1.9.7',
+      'version' => '1.9.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7594601fff153c2799a62bd678ff80749baeee0c',
+    ),
+    'drupal/console-extend-plugin' => 
+    array (
+      'pretty_version' => '0.9.5',
+      'version' => '0.9.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'eff6da99cfb5fe1fc60990672d2667c402eb3585',
     ),
     'drupal/contact' => 
     array (
@@ -1879,6 +1942,15 @@
       ),
       'reference' => 'a4faaa6f532c6086bc66c29e1bc6c29593e1ca7c',
     ),
+    'stecman/symfony-console-completion' => 
+    array (
+      'pretty_version' => '0.11.0',
+      'version' => '0.11.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a9502dab59405e275a9f264536c4e1cb61fc3518',
+    ),
     'symfony-cmf/routing' => 
     array (
       'pretty_version' => '2.3.3',
@@ -1896,6 +1968,15 @@
       array (
       ),
       'reference' => 'f6f060bdc473c3f3b1f00e2ebdeb3d02eda77f82',
+    ),
+    'symfony/config' => 
+    array (
+      'pretty_version' => 'v4.4.20',
+      'version' => '4.4.20.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '98606c6fa1a8f55ff964ccdd704275bf5b9f71b3',
     ),
     'symfony/console' => 
     array (

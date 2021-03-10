@@ -1,7 +1,7 @@
-hello.content:
-  path: '/netflix'
+netflix_show.upload:
+  path: '/netflix_show/upload'
   defaults:
-    _controller: '\Drupal\netflix_show\Controller\NetflixShowController::content'
-    _title: 'Netflix Show'
+    _form: '\Drupal\netflix_show\Form\ModuleUploadForm'
+    _title: 'Add new Netflix Show'
   requirements:
-    _permission: 'access content'
+    _permission: 'create netflix_title content'

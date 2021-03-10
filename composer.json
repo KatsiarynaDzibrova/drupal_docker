@@ -19,16 +19,17 @@
         "php": ">=7.3",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
+        "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/devel": "^4.1",
-        "drush/drush": "^10.3",
-        "vlucas/phpdotenv": "^5.1",
-        "webflo/drupal-finder": "^1.2",
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/entity_usage": "dev-2.x",
         "drupal/paragraphs": "^1.12",
-        "twbs/bootstrap": "^4.6"
+        "drush/drush": "^10.3",
+        "twbs/bootstrap": "^4.6",
+        "vlucas/phpdotenv": "^5.1",
+        "webflo/drupal-finder": "^1.2"
     },
     "require-dev": {
         "drupal/core-dev": "^9.0",
