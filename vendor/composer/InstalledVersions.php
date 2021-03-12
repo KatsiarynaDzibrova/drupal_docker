@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '81f60d78699d3431a5e396a972bb6b4111846146',
+    'reference' => 'fc7e91cad07509fc02af66a131bbdb7db6212b62',
     'name' => 'drupal-composer/drupal-project',
   ),
   'versions' => 
@@ -390,7 +390,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '81f60d78699d3431a5e396a972bb6b4111846146',
+      'reference' => 'fc7e91cad07509fc02af66a131bbdb7db6212b62',
     ),
     'drupal/action' => 
     array (
@@ -398,6 +398,24 @@ private static $installed = array (
       array (
         0 => '9.1.4',
       ),
+    ),
+    'drupal/admin_toolbar' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0',
+    ),
+    'drupal/admin_toolbar_tools' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => NULL,
     ),
     'drupal/aggregator' => 
     array (
@@ -441,6 +459,15 @@ private static $installed = array (
         0 => '9.1.4',
       ),
     ),
+    'drupal/blazy' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.1',
+    ),
     'drupal/block' => 
     array (
       'replaced' => 
@@ -461,6 +488,15 @@ private static $installed = array (
       array (
         0 => '9.1.4',
       ),
+    ),
+    'drupal/bootstrap' => 
+    array (
+      'pretty_version' => '3.23.0',
+      'version' => '3.23.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.23',
     ),
     'drupal/breakpoint' => 
     array (
@@ -1174,6 +1210,15 @@ private static $installed = array (
       array (
         0 => '9.1.4',
       ),
+    ),
+    'drupal/slick' => 
+    array (
+      'pretty_version' => '2.2.0',
+      'version' => '2.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.2',
     ),
     'drupal/standard' => 
     array (
