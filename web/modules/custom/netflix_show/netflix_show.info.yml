@@ -1,0 +1,8 @@
+name: Netflix Show Module
+description: Shows info about Netflix shows
+package: Custom
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+configure: netflix_show.admin_settings

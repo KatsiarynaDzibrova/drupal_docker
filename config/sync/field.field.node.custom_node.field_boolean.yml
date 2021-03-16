@@ -1,0 +1,23 @@
+uuid: b0169494-5fc3-4161-a018-2d3715446410
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boolean
+    - node.type.custom_node
+id: node.custom_node.field_boolean
+field_name: field_boolean
+entity_type: node
+bundle: custom_node
+label: 'In stock'
+description: 'Make item free'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

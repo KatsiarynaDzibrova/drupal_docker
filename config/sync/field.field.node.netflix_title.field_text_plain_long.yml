@@ -1,0 +1,19 @@
+uuid: 274d4fe5-a683-43e0-975e-a3aa37ae7cb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_plain_long
+    - node.type.netflix_title
+id: node.netflix_title.field_text_plain_long
+field_name: field_text_plain_long
+entity_type: node
+bundle: netflix_title
+label: Cast
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

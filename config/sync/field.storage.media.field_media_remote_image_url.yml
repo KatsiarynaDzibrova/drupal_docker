@@ -1,0 +1,21 @@
+uuid: 7f5447ad-d624-4019-bd93-9163902b9ced
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - media_entity_remote_image
+_core:
+  default_config_hash: qeKrpnL2AYCqNNe12fl6DXfCxW-nokkTfA-Cad1dfzA
+id: media.field_media_remote_image_url
+field_name: field_media_remote_image_url
+entity_type: media
+type: remote_image_url
+settings: {  }
+module: media_entity_remote_image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

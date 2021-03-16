@@ -1,0 +1,34 @@
+uuid: ab30adfa-73de-47a5-89de-4830be566571
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.netflix_title.field_number_int
+    - field.field.node.netflix_title.field_remote_image
+    - field.field.node.netflix_title.field_text_plain
+    - field.field.node.netflix_title.field_text_plain_1
+    - field.field.node.netflix_title.field_text_plain_2
+    - field.field.node.netflix_title.field_text_plain_long
+    - field.field.node.netflix_title.field_text_plain_long_1
+    - node.type.netflix_title
+  module:
+    - user
+id: node.netflix_title.teaser
+targetEntityType: node
+bundle: netflix_title
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_number_int: true
+  field_remote_image: true
+  field_text_plain: true
+  field_text_plain_1: true
+  field_text_plain_2: true
+  field_text_plain_long: true
+  field_text_plain_long_1: true

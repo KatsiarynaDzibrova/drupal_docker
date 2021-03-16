@@ -1,0 +1,40 @@
+uuid: 0fe65f04-6055-4630-99a9-59852bd5ecf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.custom_node.body
+    - field.field.node.custom_node.comment
+    - field.field.node.custom_node.field_boolean
+    - field.field.node.custom_node.field_number_decimal
+    - field.field.node.custom_node.field_tags
+    - field.field.node.custom_node.field_taxonomy
+    - node.type.custom_node
+  module:
+    - text
+    - user
+id: node.custom_node.teaser
+targetEntityType: node
+bundle: custom_node
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment: true
+  field_boolean: true
+  field_number_decimal: true
+  field_tags: true
+  field_taxonomy: true

@@ -1,0 +1,21 @@
+uuid: 5fe0240e-7902-47bd-aee0-1ba3e4cbfcd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel
+    - field.storage.block_content.field_text_plain
+id: block_content.carousel.field_text_plain
+field_name: field_text_plain
+entity_type: block_content
+bundle: carousel
+label: Title
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Block
+default_value_callback: ''
+settings: {  }
+field_type: string

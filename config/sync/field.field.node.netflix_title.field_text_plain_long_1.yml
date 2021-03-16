@@ -1,0 +1,19 @@
+uuid: 126d8098-bb3f-4afb-8559-5d01cf10e946
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_plain_long_1
+    - node.type.netflix_title
+id: node.netflix_title.field_text_plain_long_1
+field_name: field_text_plain_long_1
+entity_type: node
+bundle: netflix_title
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
