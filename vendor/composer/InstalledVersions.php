@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'fc7e91cad07509fc02af66a131bbdb7db6212b62',
+    'reference' => '5b1f88e027ee32fe5589163f6ee36e0ef1c48335',
     'name' => 'drupal-composer/drupal-project',
   ),
   'versions' => 
@@ -390,7 +390,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'fc7e91cad07509fc02af66a131bbdb7db6212b62',
+      'reference' => '5b1f88e027ee32fe5589163f6ee36e0ef1c48335',
     ),
     'drupal/action' => 
     array (
@@ -1040,6 +1040,15 @@ private static $installed = array (
       array (
         0 => '9.1.4',
       ),
+    ),
+    'drupal/media_entity_remote_image' => 
+    array (
+      'pretty_version' => '1.0.0-alpha2',
+      'version' => '1.0.0.0-alpha2',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.0-alpha2',
     ),
     'drupal/media_library' => 
     array (

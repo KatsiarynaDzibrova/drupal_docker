@@ -29,6 +29,7 @@
         "drupal/devel": "^4.1",
         "drupal/entity_reference_revisions": "^1.8",
         "drupal/entity_usage": "dev-2.x",
+        "drupal/media_entity_remote_image": "^1.0@alpha",
         "drupal/paragraphs": "^1.12",
         "drupal/slick": "^2.2",
         "drush/drush": "^10.3",

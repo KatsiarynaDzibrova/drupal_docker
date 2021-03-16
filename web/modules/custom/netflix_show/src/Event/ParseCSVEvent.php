@@ -4,6 +4,7 @@ namespace Drupal\netflix_show\Event;
 
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\Entity\File;
+use Drupal\media\Entity\Media;
 use Symfony\Component\EventDispatcher\Event;
 use GuzzleHttp\Client;
 
@@ -33,8 +34,9 @@ class ParseCSVEvent extends Event {
     if (isset($form_file[0]) && !empty($form_file[0])) {
       $file = File::load($form_file[0]);
       $handle = fopen($file->getFileUri(),"r");
-      for ($i = 0; $i < 2; $i++) {
-        if (($data = fgetcsv($handle)) === FALSE) break;
+      for ($i = 0; $i < 5; $i++) {
+        $data = fgetcsv($handle);
+        if ($data === FALSE) break;
         if ($i == 0) continue;
         $title = $data[2];
         $fields = [
@@ -50,14 +52,23 @@ class ParseCSVEvent extends Event {
         $node = \Drupal::entityTypeManager()
           ->getStorage('node')
           ->create($fields);
-        if ($image_url = $this->getImage($title) != '') {
-          $image = file_get_contents($image_url);
-          $file_temp = system_retrieve_file($image, NULL, TRUE, FileSystemInterface::EXISTS_RENAME);
-          if ($file_temp !== FALSE) {
-            $node->set('field_image', ['target_id' => $file_temp->fid,]);
-          }
-          $node->save();
+        $image_url = $this->getImage($title);
+        if ($image_url != '') {
+          $media = Media::create([
+            'bundle' => 'remote_image',
+            'uid' => \Drupal::currentUser()->id(),
+            'field_media_remote_image_url' => [
+              'title' => $title,
+              'uri' => $image_url,
+              'alt' => $title,
+            ],
+          ]);
+          $media->setName($image_url)
+            ->setPublished(TRUE)
+            ->save();
+            $node->set('field_remote_image', $media);
         }
+        $node->save();
       }
     }
   }
@@ -79,9 +90,11 @@ class ParseCSVEvent extends Event {
 
     $response = $request->getBody()->getContents();
     $json = json_decode($response);
-    if ($json->Response) {
-      return $json->Search[0]->Poster;
+    if ($json->Response == 'True') {
+      $image_url = $json->Search[0]->Poster;
+      if ($image_url != 'N/A') return $image_url;
     }
+    \Drupal::logger('netflix_show')->notice('Poster not found for show ' . $title);
     return '';
   }
 }
