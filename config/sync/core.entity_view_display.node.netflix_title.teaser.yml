@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.netflix_title.field_image
     - field.field.node.netflix_title.field_number_int
+    - field.field.node.netflix_title.field_remote_image
     - field.field.node.netflix_title.field_text_plain
     - field.field.node.netflix_title.field_text_plain_1
     - field.field.node.netflix_title.field_text_plain_2
@@ -25,8 +25,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_image: true
   field_number_int: true
+  field_remote_image: true
   field_text_plain: true
   field_text_plain_1: true
   field_text_plain_2: true

@@ -3,17 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.netflix_title.field_image
     - field.field.node.netflix_title.field_number_int
+    - field.field.node.netflix_title.field_remote_image
     - field.field.node.netflix_title.field_text_plain
     - field.field.node.netflix_title.field_text_plain_1
     - field.field.node.netflix_title.field_text_plain_2
     - field.field.node.netflix_title.field_text_plain_long
     - field.field.node.netflix_title.field_text_plain_long_1
-    - image.style.thumbnail
     - node.type.netflix_title
   module:
-    - image
     - path
 id: node.netflix_title.default
 targetEntityType: node
@@ -26,20 +24,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    weight: 123
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
   field_number_int:
     weight: 127
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_remote_image:
+    weight: 130
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_text_plain:
     weight: 124

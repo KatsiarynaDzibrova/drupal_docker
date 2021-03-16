@@ -28,8 +28,10 @@ module:
   image: 0
   link: 0
   media: 0
+  media_entity_remote_image: 0
   menu_link_content: 0
   menu_ui: 0
+  netflix_show: 0
   node: 0
   options: 0
   page_cache: 0
