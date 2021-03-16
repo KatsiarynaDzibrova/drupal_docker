@@ -58,7 +58,7 @@ class ParseCSVEvent extends Event {
             'bundle' => 'remote_image',
             'uid' => \Drupal::currentUser()->id(),
             'field_media_remote_image_url' => [
-              'title' => $title,
+              'name' => $title,
               'uri' => $image_url,
               'alt' => $title,
             ],
@@ -66,7 +66,7 @@ class ParseCSVEvent extends Event {
           $media->setName($image_url)
             ->setPublished(TRUE)
             ->save();
-            $node->set('field_remote_image', $media);
+          $node->set('field_remote_image', ['target_id' => $media->id()]);
         }
         $node->save();
       }

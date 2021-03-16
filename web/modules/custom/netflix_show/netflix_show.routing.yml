@@ -1,5 +1,5 @@
 netflix_show.upload:
-  path: '/netflix_show/upload'
+  path: '/admin/netflix_show/upload'
   defaults:
     _form: '\Drupal\netflix_show\Form\ModuleUploadForm'
     _title: 'Add new Netflix Show'
