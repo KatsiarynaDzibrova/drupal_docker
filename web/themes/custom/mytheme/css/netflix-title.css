@@ -1,0 +1,41 @@
+.netflix-title .content {
+  font-family: Roboto, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  color: #4F4F4F;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  width: 700px;
+}
+
+
+.poster {
+  padding: 20px;
+  flex: 1;
+}
+
+.info {
+  float: right;
+  padding: 40px;
+}
+
+.field--name-field-text-plain-2 {
+  float: right;
+  text-align: right;
+}
+
+.field {
+  padding: 10px 0;
+}
+
+.field--name-field-text-plain-long-1 {
+  margin: 30px 0;
+}
+
+.field--name-field-text-plain-1 {
+  float: right;
+  text-align: right;
+}

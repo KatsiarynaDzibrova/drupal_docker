@@ -29,3 +29,7 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+netflix:
+  css:
+    theme:
+      css/netflix-title.css: { }
