@@ -33,3 +33,7 @@ netflix:
   css:
     theme:
       css/netflix-title.css: { }
+netflix-teaser:
+  css:
+    theme:
+      css/netflix-title-teaser.css: { }
