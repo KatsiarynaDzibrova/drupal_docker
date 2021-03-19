@@ -11,7 +11,6 @@
   width: 700px;
 }
 
-
 .poster {
   padding: 20px;
   flex: 1;
@@ -22,20 +21,20 @@
   padding: 40px;
 }
 
-.field--name-field-text-plain-2 {
+.duration {
   float: right;
   text-align: right;
 }
 
-.field {
+.field-netflix-title {
   padding: 10px 0;
 }
 
-.field--name-field-text-plain-long-1 {
+.description {
   margin: 30px 0;
 }
 
-.field--name-field-text-plain-1 {
+.country {
   float: right;
   text-align: right;
 }

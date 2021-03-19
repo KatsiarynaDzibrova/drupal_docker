@@ -54,14 +54,6 @@
   ]
 %}
 
-{% if multiple %}
-  <div{{ attributes.addClass(classes, 'field--items') }}>
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-  </div>
-{% else %}
-  {% for item in items %}
-    <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-  {% endfor %}
-{% endif %}
+{% for item in items %}
+  <div{{ attributes.addClass(classes, 'description') }}>{{ item.content }}</div>
+{% endfor %}
