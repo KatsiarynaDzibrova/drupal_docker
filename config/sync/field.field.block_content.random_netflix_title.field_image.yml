@@ -1,0 +1,27 @@
+uuid: 180ce900-ccc7-4306-b09d-56dd09fb6ec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.random_netflix_title
+    - field.storage.block_content.field_image
+  module:
+    - media_entity_remote_image
+id: block_content.random_netflix_title.field_image
+field_name: field_image
+entity_type: block_content
+bundle: random_netflix_title
+label: Poster
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    options: {  }
+    uri: 'https://m.media-amazon.com/images/M/MV5BMTM3Mjk4NDMwMF5BMl5BanBnXkFtZTcwMTg0Nzg1OQ@@._V1_SX300.jpg'
+    alt: Poster
+default_value_callback: ''
+settings:
+  link_type: '17'
+  title: 1
+field_type: remote_image_url

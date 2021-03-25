@@ -5,3 +5,11 @@ netflix_show.upload:
     _title: 'Add new Netflix Show'
   requirements:
     _permission: 'create netflix_title content'
+
+random_netflix_show.content:
+  path: '/netflix-show/random'
+  defaults:
+    _controller: '\Drupal\netflix_show\Controller\RandomNode::content'
+    _title: 'Random netflix title'
+  requirements:
+    _permission: 'access content'

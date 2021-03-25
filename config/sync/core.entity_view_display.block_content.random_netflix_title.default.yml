@@ -1,0 +1,50 @@
+uuid: c5f5c028-622e-4369-99f3-5cf33ace169e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.random_netflix_title
+    - field.field.block_content.random_netflix_title.field_image
+    - field.field.block_content.random_netflix_title.field_link
+    - field.field.block_content.random_netflix_title.field_text_plain
+  module:
+    - link
+    - media_entity_remote_image
+id: block_content.random_netflix_title.default
+targetEntityType: block_content
+bundle: random_netflix_title
+mode: default
+content:
+  field_image:
+    weight: 2
+    label: above
+    settings:
+      trim_length: '80'
+      url_only: ''
+      url_plain: ''
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: remote_image_url_formatter
+    region: content
+  field_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_text_plain:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

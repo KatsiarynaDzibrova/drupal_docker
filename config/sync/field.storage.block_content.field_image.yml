@@ -1,0 +1,19 @@
+uuid: 928cc371-ee9a-4e56-9109-0267a91b8f53
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media_entity_remote_image
+id: block_content.field_image
+field_name: field_image
+entity_type: block_content
+type: remote_image_url
+settings: {  }
+module: media_entity_remote_image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
