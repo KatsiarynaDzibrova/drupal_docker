@@ -38,6 +38,8 @@ netflix-teaser:
     theme:
       css/netflix-title-teaser.css: {}
 random-netflix-title:
+  js:
+    js/random-netflix-title.js: {}
   css:
     theme:
       css/random-netflix-title.css: {}
