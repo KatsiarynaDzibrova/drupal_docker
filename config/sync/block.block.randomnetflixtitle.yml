@@ -1,0 +1,25 @@
+uuid: 1d9e8389-546b-41fc-84f0-18851c9e908f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:random_netflix_title:113f880e-dad0-4fa5-920a-2cbad62f24ac'
+  module:
+    - block_content
+  theme:
+    - mytheme
+id: randomnetflixtitle
+theme: mytheme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:113f880e-dad0-4fa5-920a-2cbad62f24ac'
+settings:
+  id: 'block_content:113f880e-dad0-4fa5-920a-2cbad62f24ac'
+  label: 'Random netflix title'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 6a63a1df-35d3-44d1-97cc-84d617b03f11
+langcode: en
+status: true
+dependencies: {  }
+id: random_netflix_title
+label: 'Random netflix title'
+revision: 0
+description: 'Displays random netflix title on page load and every 5 minutes afterwards'
