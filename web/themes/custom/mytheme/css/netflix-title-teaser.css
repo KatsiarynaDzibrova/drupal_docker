@@ -1,0 +1,42 @@
+.netflix-title .content {
+  font-family: Roboto, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  color: #4F4F4F;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+.views-col {
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
+h2 {
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 15px;
+}
+
+.poster {
+  padding: 5px;
+  flex: 1;
+}
+
+.info {
+  float: right;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+article {
+  width: 100%;
+  height: auto;
+}
