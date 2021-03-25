@@ -32,4 +32,14 @@ color.preview:
 netflix:
   css:
     theme:
-      css/netflix-title.css: { }
+      css/netflix-title.css: {}
+netflix-teaser:
+  css:
+    theme:
+      css/netflix-title-teaser.css: {}
+random-netflix-title:
+  css:
+    theme:
+      css/random-netflix-title.css: {}
+  dependencies:
+    - core/jquery
