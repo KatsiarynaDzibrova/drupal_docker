@@ -1,6 +1,7 @@
 <?php
 
 namespace Drupal\netflix_show\Controller;
+
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\ReplaceCommand;
 use Drupal\media\Entity\Media;
@@ -15,20 +16,27 @@ class RandomNode extends ControllerBase
 
     $response = new AjaxResponse();
     $Selector = '.netflix-show-title';
-    $content = '<div class="netflix-show-title">'. $node_info['title'] .'</div>';
+    $content = '<div class="netflix-show-title">'
+      . $node_info['title']
+      . '</div>';
     $response->addCommand(new ReplaceCommand($Selector, $content));
 
     $Selector = '.netflix-show-poster';
-    $content = '<div class="netflix-show-poster"> <img src="'. $node_info['img'] .'" alt = "Poster"></div>';
+    $content = '<div class="netflix-show-poster"> '
+      . '<img src="' . $node_info['img'] . '" alt = "Poster">'
+      . '</div>';
     $response->addCommand(new ReplaceCommand($Selector, $content));
 
     $Selector = '.netflix-show-url';
-    $content = '<div class="netflix-show-url"> <a href="'. $node_info['url'] .'">Read more</a></div>';
+    $content = '<div class="netflix-show-url"> '
+      . '<a href="' . $node_info['url'] . '">Read more</a>'
+      . '</div>';
     $response->addCommand(new ReplaceCommand($Selector, $content));
     return $response;
   }
 
-  public function get() {
+  public function get()
+  {
     $result = [];
     $query = \Drupal::entityQuery('node')
       ->condition('type', 'netflix_title')

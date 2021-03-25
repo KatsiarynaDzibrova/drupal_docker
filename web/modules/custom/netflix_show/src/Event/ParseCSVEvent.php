@@ -11,7 +11,8 @@ use GuzzleHttp\Client;
 /**
  * Event that is parses csv with shows and makes nodes.
  */
-class ParseCSVEvent extends Event {
+class ParseCSVEvent extends Event
+{
 
   const EVENT_NAME = 'parse_csv';
 
@@ -22,14 +23,16 @@ class ParseCSVEvent extends Event {
    *
    * @param $file
    */
-  public function __construct($file) {
+  public function __construct($file)
+  {
     $this->file = $file;
   }
 
   /**
    * Parse csv
    */
-  public function run() {
+  public function run()
+  {
     $form_file = $this->file;
     if (isset($form_file[0]) && !empty($form_file[0])) {
       $file = File::load($form_file[0]);
@@ -73,7 +76,8 @@ class ParseCSVEvent extends Event {
     }
   }
 
-  private function getImage($title) {
+  private function getImage($title)
+  {
     $client = new Client;
 
     $request = $client->request('GET', 'https://movie-database-imdb-alternative.p.rapidapi.com/', [
