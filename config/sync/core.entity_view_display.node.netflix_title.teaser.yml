@@ -19,16 +19,20 @@ targetEntityType: node
 bundle: netflix_title
 mode: teaser
 content:
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+  field_remote_image:
+    type: entity_reference_entity_view
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
 hidden:
   field_number_int: true
-  field_remote_image: true
   field_text_plain: true
   field_text_plain_1: true
   field_text_plain_2: true
   field_text_plain_long: true
   field_text_plain_long_1: true
+  links: true
